@@ -1,8 +1,15 @@
 const dino = document.querySelector('.dino');
 const bg = document.querySelector('.background');
+const placar = document.querySelector('.placar');
 let position = 0;
+let score = 0;
 
 let taPulando = false;
+
+intervalPlacar = setInterval(() => {
+    score += 1;
+    placar1();
+}, 100)
 
 function getKey(event) {
     if (event.key === " ") {
@@ -69,5 +76,14 @@ function criaCactos() {
 
     setTimeout(criaCactos, randomTime);
 }
-document.addEventListener('keyup', getKey)
+
+function placar1() {
+
+    placar.innerHTML = "<h2> Pontos: " + score + "</h2>";
+
+
+} //fim da função placar()
+
+
 criaCactos();
+document.addEventListener('keyup', getKey);

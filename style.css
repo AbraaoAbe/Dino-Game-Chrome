@@ -2,6 +2,21 @@ body {
     background-color: #fafafa;
 }
 
+.placar {
+    width: 200px;
+    height: 100px;
+    background-color: black;
+    border-radius: 25%;
+    position: absolute;
+    bottom: 500px;
+    left: 600px;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
 .dino {
     width: 60px;
     height: 60px;
